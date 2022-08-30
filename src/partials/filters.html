@@ -1,32 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <section class="filter">
-        <ul class="filter">
-            <li class="filter">
+<section class="section-filter">
+        <div class="container">
+        <ul class="filter-list">
+            <li class="filter-items">
                 <svg></svg>
                 <select name="user_profile_color_1">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                        <optgroup label="Жанри"> 
+                            <option value="">Трилер</option>
+                            <option value="">Екшн</option>
+                            <option value="">RPG</option>
+                            <option value="">Симулятор</option>
+                            <option value="">Шутер</option>
+                            <option value="">Бойовик</option>
+                        </optgroup>
+                        <optgroup label="Оцінка"> 
+                            <option value="">5</option>
+                            <option value="">4</option>
+                            <option value="">3</option>
+                            <option value="">2</option>
+                            <option value="">1</option>
+                        </optgroup>
+                        <optgroup label="Кількість скачувань"> 
+                            <option value="">менше 500</option>
+                            <option value="">500-1000</option>
+                            <option value="">1000-1500</option>
+                            <option value="">1500-2000</option>
+                            <option value="">більше 2000</option>
+                        </optgroup>
                 </select>
                 <svg></svg>
             </li>
             <li class="filter search">
-                <input type="text">
+                <input type="text" placeholder="Пошук">
             </li>
             <li class="filter search-button">
-                <button>
+                <button type="button">
+                    <p>Кнопка</p>
                     <svg></svg>
                 </button>
             </li>
         </ul>
+        </div>
     </section>
-</body>
-</html>
