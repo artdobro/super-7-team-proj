@@ -1,0 +1,85 @@
+<!-- Модальне вікно 1-->
+<section>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-sign-up container">
+            <button type="button" class="modal-button" data-modal-close></button>
+            <!-- Форма модалки 1-->
+            <form class="form js-speaker-form" autocomplete="on">
+                <h3 class="title">Sign Up</h3>
+                <ul class="fields">
+                    <li class="field">
+                        <label for="user-name">Username</label>
+                            <input 
+                                class="form-field"
+                                type="text"
+                                name="user-name"
+                                id="user-name" >
+                    </li>
+                    <li class="field">
+                        <label for="email">E-Mail</label>
+                            <input 
+                                class="form-field"
+                                type="email"
+                                name="email"
+                                id="email" >
+                    <li class="field">
+                        <label for="password">Password</label>
+                            <input 
+                                class="form-field"
+                                type="password"
+                                name="password"
+                                id="password" >
+                </ul>
+                    <button type="submit" class="sign-up-btn">Sign Up</button>
+                <div class="checkbox">
+                    <label class="field-label" for="checkbox">
+                        <input class="field-checkbox" type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
+                        <svg class="checkbox-icon" width="8" height="8">
+                            <!-- <use href="images/icons.svg#icon-checkbox"></use> -->
+                        </svg>
+                        <p>Remember me</p>
+                    </label>
+                </div>
+                    <p>Already have an account?</p>
+                    <a href="./">Log In</a>
+            </form>
+        </div>
+    </div>
+    <!-- Модальне вікно 2 -->
+    <div class="backdrop is-hidden container" data-modal>
+        <div class="modal-log-in">
+            <button type="button" class="modal-button" data-modal-close></button>
+            <!-- Форма модалки 2-->
+            <form class="form js-speaker-form" autocomplete="on">
+                <h3 class="title">Log In</h3>
+                <ul class="fields">
+                    <li class="field">
+                        <label for="user-name">Username</label>
+                            <input 
+                                class="form-field"
+                                type="text"
+                                name="user-name"
+                                id="user-name" >
+                    </li>
+                    <li class="field">
+                        <label for="password">Password</label>
+                            <input 
+                                class="form-field"
+                                type="password"
+                                name="password"
+                                id="password" >
+                </ul>
+                    <button type="submit" class="log-in-btn">Log In</button>
+                <div class="checkbox">
+                    <label class="field-label" for="checkbox">
+                        <input class="field-checkbox" type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
+                        <svg class="checkbox-icon" width="8" height="8">
+                            <!-- <use href="images/icons.svg#icon-checkbox"></use> -->
+                        </svg>
+                     <p> Remember me </p>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
