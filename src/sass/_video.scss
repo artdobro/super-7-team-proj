@@ -1,11 +1,41 @@
-.videoh2{
-align-content: center;
-justify-content: center;
-text-align: center;
+.videoh2 {
+    text-align: center;
+    justify-content: center;
 }
 
 video{
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+
+
