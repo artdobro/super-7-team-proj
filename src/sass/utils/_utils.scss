@@ -1,4 +1,8 @@
-
+body {
+    color: $primeryTextColor;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
 
 html {
     box-sizing: border-box;
@@ -24,4 +28,10 @@ img {
     display: block;
     height: auto;
     width: 100%;
+}
+body {
+    $primeryTextColor: #000000;
+    $backgroundFiltersColor: #DBDBDB;
+    $headerColor: #464646;
+    font-family: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 }
