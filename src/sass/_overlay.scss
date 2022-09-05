@@ -1,0 +1,28 @@
+.overlay-beyond .overlay-far-cry-III
+.overlay-rust .overlay-stalker
+.overlay-far-cry-IV .overlay-metro
+.overlay-mafia-II .overlay-gta-V
+.overlay-gta-IV .overlay-deltarune
+.overlay-detroit .overlay-hallo-infinite
+.overlay-horizon .overlay-hello-neighbor
+.overlay-RDR-II .overlay-cyberpunk-MMLXXVII{
+min-height: fit-content;
+min-width: fit-content;
+position:absolute;
+background-color: rgba(0, 0, 0, 0.45);
+flex-wrap: nowrap;
+}
+.overlay-icon{
+    justify-content: start;
+    }
+.game-information{
+    color:#FFF;
+    font-size:30px;
+    justify-content: center;
+}
+.overlay-close {
+    display: block;
+   color: #FFF;
+border-radius: 10px;
+font-size: 18px;
+}
