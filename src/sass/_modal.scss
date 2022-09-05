@@ -9,11 +9,6 @@
     // background-image: url(images/background-image.png);
 
     opacity: 0.4;
-
-&.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-    }
 }
 .sign-up{
     position: absolute;
@@ -73,6 +68,6 @@
     border: 0;
     border-radius: 50%;
 
-    background-image: url(../images/close.svg);
+    // background-image: url(../images/close.svg);
     background-size: contain;
 }
