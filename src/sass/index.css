@@ -1,0 +1,152 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.section-title {
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 27px;
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  .section-screenshots {
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .section-screenshots {
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-screenshots {
+    margin-bottom: 46px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 11px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .screenshots-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -9px;
+  }
+}
+@media (min-width: 1200px) {
+  .screenshots-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -23px -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .screenshot-item {
+    width: 183px;
+    height: 101px;
+    margin: auto;
+  }
+  .screenshot-item:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+@media (min-width: 768px) {
+  .screenshot-item {
+    width: calc((100% - 54px) / 3);
+    margin: 15px 9px;
+  }
+}
+@media (min-width: 1200px) {
+  .screenshot-item {
+    width: calc((100% - 180px) / 3);
+    margin: 23px 30px;
+  }
+}/*# sourceMappingURL=index.css.map */
