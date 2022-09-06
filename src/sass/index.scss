@@ -1,8 +1,9 @@
 @import './variables/breakpoints';
 @import './variables/variables';
 @import './utils/utils';
-@import './common';
-@import './_log-in.sass';
-@import'./sign-up';
-@import './hero';
-@import './stills.scss';
+@import './components/common';
+@import './components/hero';
+@import'./components/_log-in.sass';
+@import './components/sign-up';
+@import './components/stills';
+@import './components/preloader';

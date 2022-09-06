@@ -7,9 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../src/images/dragon.png" />
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
     <include src="./partials/header.html"></include>
     <include src="./partials/log-in.html"></include>
     <include src="./partials/sign-up.html"></include>
@@ -22,7 +31,5 @@
     <include src="./partials/footer.html"></include>
 
     <script type="module" src="./index.js"></script>
-    <!-- <script type="module" src="./modal.js"></script>
-    <script type="module" src="./form.js"></script> -->
   </body>
 </html>
