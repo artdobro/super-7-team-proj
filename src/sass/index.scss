@@ -2,8 +2,9 @@
 @import './variables/variables';
 @import './utils/utils';
 @import './components/common';
+@import './components/header';
 @import './components/hero';
-@import'./components/_log-in.sass';
+@import'./components/log-in';
 @import './components/sign-up';
 @import './components/stills';
 @import './components/preloader';
