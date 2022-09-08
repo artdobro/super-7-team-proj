@@ -1,0 +1,46 @@
+.gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    @media(min-width: $mobile) {
+        margin:-16px;
+    }
+}
+.gallery-item {
+    border-radius: 16px;
+
+    background-color: #D9D9D9;
+    @media(min-width: $mobile) {
+            width: calc((100% - 2 * 32px) / 2);
+            margin: 16px;
+            margin-top: 24px;
+        }
+}
+
+.gallery-link{
+    text-align: center;
+    align-items: center;
+    @media(min-width: $mobile) {
+            
+            height: 132px;
+            // padding:11px 14px 16px 13px;
+        }
+}
+
+.card-img{
+    display: inline-flex;
+    margin: 0px;
+    @media(min-width: $mobile) {
+         max-width:85%;
+         margin: 11px 14px;
+    }
+}
+
+.card-name{
+    color:$primeryTextColor;
+    font-weight: normal;
+    @media(min-width: $mobile) {
+        margin-bottom: 28px;
+    font-size: 10px;
+    line-height: 1.5 ;
+    }
+}

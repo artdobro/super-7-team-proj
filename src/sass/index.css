@@ -274,4 +274,32 @@ body {
     width: calc((100% - 180px) / 3);
     margin: 23px 30px;
   }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 480px) {
+  .gallery-list {
+    margin: -16px;
+  }
+}
+
+.gallery-item {
+  border-radius: 16px;
+  background-color: #D9D9D9;
+}
+@media (min-width: 480px) {
+  .gallery-item {
+    width: calc((100% - 64px) / 2);
+    margin: 16px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 480px) {
+  .gallery-link {
+    height: 132px;
+  }
 }/*# sourceMappingURL=index.css.map */
