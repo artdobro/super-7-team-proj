@@ -1,3 +1,11 @@
+
+.svg-description {
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+
 body {
     color: $primeryTextColor;
     background-color: #ffffff;
@@ -29,12 +37,7 @@ img {
     height: auto;
     width: 100%;
 }
-body {
-    $primeryTextColor: #000000;
-    $backgroundFiltersColor: #DBDBDB;
-    $headerColor: #464646;
-    font-family: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-}
+
 
 .section-screenshots{
     @media (max-width: 768px) {
@@ -48,6 +51,12 @@ body {
     @media (min-width: 1240px) {
         margin-bottom: 46px;
     }
+}
+body {
+    $primeryTextColor: #000000;
+    $backgroundFiltersColor: #DBDBDB;
+    $headerColor: #464646;
+    font-family: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 }
 
 .section-title{
