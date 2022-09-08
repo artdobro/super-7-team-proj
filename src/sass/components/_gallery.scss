@@ -7,23 +7,31 @@
 }
 .gallery-item {
     border-radius: 16px;
-
-    background-color: #D9D9D9;
+    
+        background-color: #D9D9D9;
+    
     @media(min-width: $mobile) {
             width: calc((100% - 2 * 32px) / 2);
-            margin: 16px;
-            margin-top: 24px;
+                margin: 16px;
+                margin-top: 24px;
+                // height: 132px;
         }
 }
 
 .gallery-link{
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    @media(min-width: $mobile) {
+    justify-content: center;
+
+   
+
+    // @media(min-width: $mobile) {
+           
             
-            height: 132px;
-            // padding:11px 14px 16px 13px;
-        }
+    //         // padding:11px 14px 16px 13px;
+    //     }
 }
 
 .card-img{
@@ -31,7 +39,7 @@
     margin: 0px;
     @media(min-width: $mobile) {
          max-width:85%;
-         margin: 11px 14px;
+         margin: 11px 14px 0px 14px;
     }
 }
 
