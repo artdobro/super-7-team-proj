@@ -1,8 +1,9 @@
 
 .svg-description {
-   align-items: center;
-   justify-content: center;
-   display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 0;
+margin-right: 0;
 }
 
 
@@ -207,3 +208,203 @@ body {
         color: #ffffff;
         background-color: #000000;
     }
+
+    // Модалка sign-up
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    // background-image: url(images/background-image.png);
+
+    opacity: 0.4;
+}
+.sign-up{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    
+    padding: 46px;
+    border-radius: 20px;
+
+@media (min-width:$mobile) {
+    width: 270px;
+    max-height: 315px;
+    height: 100%;
+}
+
+@media (min-width:$desktop) {
+    width: 612px;
+    height: 700px;
+}
+
+@media (min-width:$tablet) {
+    width: 481px;
+    height: 506px;
+}
+}
+.modal-button{
+    position: absolute;
+    top:424px;
+    left: 235px;
+    width: 142px;
+    height: 56px;
+
+    border: 0;
+    border-radius: 50%;
+
+    // background-image: url(../images/close.svg);
+    background-size: contain;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #92ffd0;
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: -70px;
+    margin-left: -70px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #0a243c;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  .preloader__item:nth-child(2){
+    top: auto;
+    bottom: 20%;
+    animation-delay: -2s;
+  }
+  .preloader__item:nth-child(3){
+    top: auto;
+    bottom: 100%;
+    animation-delay: -3s;
+  }
+
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+
+    }
+  
+    50% {
+      transform: scale(1);
+      background-color:  #3a79b3;
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+  .overlay{
+    min-height: fit-content;
+    min-width: fit-content;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    flex-wrap: nowrap;
+    }
+    .overlay-icon{
+        justify-content: start;
+        }
+    .game-information{
+        color:#FFF;
+        font-size:30px;
+        justify-content: center;
+    }
+    .overlay-close {
+        display: block;
+       color: #FFF;
+    border-radius: 10px;
+    font-size: 18px;
+    }
+
+    .hero-section{
+    
+        width: 100%;
+        height: 598px;
+       padding: 200px;
+        text-align: center;
+        
+    
+        
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),    url("/src/images/hero-img/Rectangle\ 22.jpg");
+         
+        
+        
+          background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      
+    
+    
+         
+      
+       
+    
+    
+    
+       
+    }
+    
+    .hero-h1,
+    .hero-h2{
+       
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    .hero-h2{
+        font-weight: 400;
+      
+    }
+    
+    }
+    
