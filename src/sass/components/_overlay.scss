@@ -1,0 +1,21 @@
+.overlay{
+    min-height: fit-content;
+    min-width: fit-content;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    flex-wrap: nowrap;
+    }
+    .overlay-icon{
+        justify-content: start;
+        }
+    .game-information{
+        color:#FFF;
+        font-size:30px;
+        justify-content: center;
+    }
+    .overlay-close {
+        display: block;
+       color: #FFF;
+    border-radius: 10px;
+    font-size: 18px;
+    }

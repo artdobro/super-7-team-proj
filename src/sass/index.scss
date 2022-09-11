@@ -1,8 +1,23 @@
-@import './veriables/breakpoints';
-@import './veriables/veriables';
+@import './variables/breakpoints';
+@import './variables/variables';
 @import './utils/utils';
+<<<<<<< HEAD
 @import './common';
 @import './modal';
 @import './hero';
 @import './stills.scss';
 @import './download';
+=======
+@import './components/common';
+@import './components/header';
+@import './components/hero';
+@import'./components/log-in';
+@import './components/sign-up';
+@import './components/stills';
+@import './components/video';
+@import './components/preloader';
+@import './components/footer';
+@import './components/gallery';
+@import './components/overlay';
+@import './components/filters';
+>>>>>>> main
