@@ -1,0 +1,12 @@
+.video{
+    @media (max-width: 767px) {
+        width: 230px;
+    }
+    @media (min-width: $tablet) {
+        width: 584px;
+    }
+    @media (min-width: $desktop) {
+        width: 1030px;
+    }
+       
+}
