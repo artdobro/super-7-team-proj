@@ -4,6 +4,8 @@
     position:absolute;
     background-color: rgba(0, 0, 0, 0.45);
     flex-wrap: nowrap;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .overlay-icon{
         justify-content: start;
@@ -15,7 +17,16 @@
     }
     .overlay-close {
         display: block;
-       color: #FFF;
-    border-radius: 10px;
+       color: #000;
+    background-color: #fff;
+       border-radius: 10px;
     font-size: 18px;
+    }
+    .overlay:hover 
+    .overlay:focus{
+        transform: translateY(0);
+    }
+    .overlay-close:hover
+    .overlay-close:focus{
+        background-color: none;
     }
