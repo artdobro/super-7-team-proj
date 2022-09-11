@@ -1,11 +1,6 @@
 @import './variables/breakpoints';
 @import './variables/variables';
 @import './utils/utils';
-@import './common';
-@import './modal';
-@import './hero';
-@import './stills.scss';
-@import './download';
 @import './components/common';
 @import './components/header';
 @import './components/hero';
@@ -13,6 +8,7 @@
 @import './components/sign-up';
 @import './components/stills';
 @import './components/video';
+@import './components/download';
 @import './components/preloader';
 @import './components/footer';
 @import './components/gallery';
