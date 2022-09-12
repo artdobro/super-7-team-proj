@@ -5,26 +5,25 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding-left: 105px;
-    padding-right: 105px;
 
-    @media (min-width: $mobile) {
-        width: 480px;
-        padding-left: 60px;
-        padding-right: 190px;
+
+    @media (max-width: 309px) {
+        width: 310px;
+        padding-left: 40px;
+        padding-right: 40px;
 
     }
 
     @media (min-width: $tablet) {
         width: 768px;
-        padding-left: 105px;
-        padding-right: 190px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
     @media (min-width: $desktop) {
         width: 1240px;
-        padding-left: 190px;
-        padding-right: 190px;
+        padding-left: 105px;
+        padding-right: 105px;
     }
 }
 .section {
