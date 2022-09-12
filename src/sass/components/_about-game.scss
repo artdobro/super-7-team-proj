@@ -1,7 +1,7 @@
 .main-icon{
 @media (min-width:$desktop) {
-    max-width:296px;
-    max-height: 296px;
+    width:296px;
+    height: 296px;
     margin-left: 204px;
     margin-top: 62px;
 }
@@ -11,11 +11,11 @@
     margin-left: 125px;
     margin-top: 41px;
 }
-@media (min-width:$mobile) {
+@media (max-width:767px) {
     width: 166px;
     height: 166px;
-    align-items: center;
     margin-top: 16px;
+    margin-left: 97px;
 }
 }
 .ul-about{
@@ -28,19 +28,29 @@
         margin-top: 41px;
         margin-left: 45px;
     }
-    @media (min-width:$mobile) {
+    @media (max-width:767px) {
         margin-top: 16px;
-        flex-wrap: wrap;
-        align-items: center;
-    } 
+        margin-left: 104px;
+    }
 }
 .li-about{
     color: black;        
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;       
-    font-size: 26px;
-    line-height: 35px;
+    font-weight: 400;
+    @media (min-width:$desktop) {
+        font-size: 26px;
+        line-height: 35px;
+     }
+    @media (min-width:$tablet) {
+        font-size: 20px;
+        line-height: 30px;
+     }
+    @media (max-width:767px) {
+        font-size: 12px;
+        line-height: 18px;
+     }
+
 }
 .li-about:not(:first-child){
     @media (min-width:$desktop) {
@@ -49,7 +59,7 @@
     @media (min-width:$tablet) {
         margin-top: 10px;
     }
-    @media (min-width:$mobile) {
+    @media (max-width:767px) {
         margin-top: 3px;
     }
 }
@@ -59,9 +69,6 @@
     }
     @media (min-width:$tablet) {
         display: flex;
-    }
-    @media (min-width:$mobile) {
-        flex-wrap: wrap;
     }
 }
 
