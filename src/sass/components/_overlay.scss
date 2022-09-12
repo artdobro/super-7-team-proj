@@ -1,32 +1,23 @@
 .overlay{
-    min-height: fit-content;
-    min-width: fit-content;
+    width: 100%;
+    height:100%;
+    top:0;
+    right:0;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.45);
-    flex-wrap: nowrap;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position:relative;
+    overflow: hidden;
     }
     .overlay-icon{
         justify-content: start;
         }
-    .game-information{
-        color:#FFF;
+    .information-point{
+        color:rgb(255, 255, 255);
         font-size:30px;
         justify-content: center;
     }
-    .overlay-close {
-        display: block;
-       color: #000;
-    background-color: #fff;
-       border-radius: 10px;
-    font-size: 18px;
-    }
-    .overlay:hover 
-    .overlay:focus{
+    .gallery-link:hover .overlay,
+    .gallery-link:focus .overlay {
         transform: translateY(0);
     }
-    .overlay-close:hover
-    .overlay-close:focus{
-        background-color: none;
-    }
+    
