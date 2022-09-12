@@ -10,14 +10,21 @@
 
     @media (min-width: $mobile) {
         width: 480px;
+        padding-left: 60px;
+        padding-right: 190px;
+
     }
 
     @media (min-width: $tablet) {
         width: 768px;
+        padding-left: 105px;
+        padding-right: 190px;
     }
 
     @media (min-width: $desktop) {
         width: 1240px;
+        padding-left: 190px;
+        padding-right: 190px;
     }
 }
 .section {
