@@ -1,0 +1,73 @@
+.main-icon{
+@media (min-width:$desktop) {
+    max-width:296px;
+    max-height: 296px;
+    margin-left: 204px;
+    margin-top: 62px;
+}
+@media(min-width:$tablet){
+    width: 182px;
+    height: 182px;
+    margin-left: 125px;
+    margin-top: 41px;
+}
+@media (min-width:$mobile) {
+    width: 166px;
+    height: 166px;
+    align-items: center;
+    margin-top: 16px;
+}
+}
+.ul-about{
+    text-decoration: none;
+    @media (min-width:$desktop) {
+        margin-top: 62px;
+        margin-left: 82px;
+    }
+    @media (min-width:$tablet) {
+        margin-top: 41px;
+        margin-left: 45px;
+    }
+    @media (min-width:$mobile) {
+        margin-top: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+    } 
+}
+.li-about{
+    color: black;        
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;       
+    font-size: 26px;
+    line-height: 35px;
+}
+.li-about:not(:first-child){
+    @media (min-width:$desktop) {
+       margin-top: 14px; 
+    }
+    @media (min-width:$tablet) {
+        margin-top: 10px;
+    }
+    @media (min-width:$mobile) {
+        margin-top: 3px;
+    }
+}
+.section-about{
+    @media (min-width:$desktop) {
+        display: flex;
+    }
+    @media (min-width:$tablet) {
+        display: flex;
+    }
+    @media (min-width:$mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
