@@ -1,0 +1,85 @@
+.main-icon{
+@media (min-width:$desktop) {
+    width:296px;
+    height: 296px;
+    margin-left: 204px;
+    margin-top: 62px;
+}
+@media(min-width:$tablet){
+    width: 182px;
+    height: 182px;
+    margin-left: 125px;
+    margin-top: 41px;
+}
+@media (max-width:767px) {
+    width: 166px;
+    height: 166px;
+    margin-top: 16px;
+    margin-left: 97px;
+}
+}
+.ul-about{
+    text-decoration: none;
+    @media (min-width:$desktop) {
+        margin-top: 62px;
+        margin-left: 82px;
+    }
+    @media (min-width:$tablet) {
+        margin-top: 41px;
+        margin-left: 45px;
+    }
+    @media (max-width:767px) {
+        margin-top: 16px;
+        margin-left: 97px;
+        border-left: 1px solid #000000;
+        padding-left: 7px;
+    }
+}
+.p-about{
+    margin: 0px;
+}
+.li-about{
+    color: black;        
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    @media (min-width:$desktop) {
+        font-size: 26px;
+        line-height: 35px;
+     }
+    @media (min-width:$tablet) {
+        font-size: 20px;
+        line-height: 30px;
+     }
+    @media (max-width:767px) {
+        font-size: 12px;
+        line-height: 18px;
+     }
+
+}
+.li-about:not(:first-child){
+    @media (min-width:$desktop) {
+       margin-top: 14px; 
+    }
+    @media (min-width:$tablet) {
+        margin-top: 10px;
+    }
+    @media (max-width:767px) {
+        margin-top: 3px;
+    }
+}
+.section-about{
+    @media (min-width:$desktop) {
+        display: flex;
+    }
+    @media (min-width:$tablet) {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
