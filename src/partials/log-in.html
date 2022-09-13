@@ -1,25 +1,24 @@
-<section class="section">
-    <!-- log-in -->
-  <div class="backdrop container hidden" data>
+ <!-- log-in -->
+  <div class="backdrop hidden" data>
         <div class="modal log-in">
             <button type="button" class="modal-button" data-close></button>
              <!-- Form log-in -->
             <form class="form js-speaker-form" autocomplete="on">
                 <h3 class="title">Log In</h3>
                 <ul class="fields">
-                    <li class="field">
-                        <label for="user-name">Username</label>
+                    <li class="field name">
+                        <label class="user-name" for="user-name">Username</label>
                             <input 
-                                class="form-field"
+                                class="form-field log"
                                 type="text"
                                 name="user-name"
                                 id="user-name" 
                                 placeholder="Username">
                     </li>
-                    <li class="field">
-                        <label for="password">Password</label>
+                    <li class="field password">
+                        <label class="pin" for="password">Password</label>
                             <input 
-                                class="form-field"
+                                class="form-field log"
                                 type="password"
                                 name="password"
                                 id="password" 
@@ -35,7 +34,10 @@
                         Remember me
                     </label>
                 </div>
+                <div class="account">
+                    <p class="have-an-account">Don't have an account?</p>
+                    <a class="account-log-in" href="./index.html">Sign up</a>
+                </div>
             </form>
         </div>
     </div>
-</section>
