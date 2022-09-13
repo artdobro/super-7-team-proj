@@ -1,9 +1,15 @@
 .header-container{
-    @media (max-width: 1239px) {        
+    @media (max-width: 309px) {        
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 25px;        
+    }
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 50px;
     }
     @media (min-width: 1240px) {
         display: flex;
