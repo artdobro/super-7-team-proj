@@ -28,24 +28,23 @@
     padding: 0px 65px 23px 65px;
     border-radius: 20px;
     
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+   transform: translate(-50%, -50%) scale(1);
+   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 @media (min-width:$mobile) {
-    width: 270px;
-    max-height: 315px;
-    height: 100%;
+    min-width: 270px;
+    min-height: 315px;
     overflow: scroll;
 }
 
 @media (min-width:$tablet) {
-    width: 481px;
-    height: 506px;
+    min-width: 481px;
+    min-height: 506px;
 }
 
-@media (min-width:900) {
-    width: 612px;
+@media (min-width:$desktop) {
+    min-width: 612px;
     height: 700px;
 }
 
@@ -72,10 +71,10 @@
 }
 .modal-button{
     position: relative;
-    top: 18px;
+    top: 29px;
+    left: 433px;
     width: 24px;
     height: 24px;
-    left: 378px;
 
     border: 0;
     border-radius: 50%;
