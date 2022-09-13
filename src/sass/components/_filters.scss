@@ -1,0 +1,107 @@
+.container.filter-container{
+    display: flex;
+    align-items: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    @media(max-width: 767px){ 
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: #000000;
+        margin-top: 9px;
+        margin-bottom: 47px;
+    }
+    @media(min-width: 768px){
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background-color: #000000;
+        margin-top: 38px;
+        margin-bottom: 38px;
+    }
+    @media(min-width: 1240px){
+        width: 55px;
+        height: 55px;
+        margin-top: 41px;
+        margin-bottom: 41px;
+    }
+}
+.search{
+    outline: none;
+    @media(max-width: 767px){
+        font-size: 7px;
+        line-height: 9px;
+        width: 142px;
+        height: 17px;
+        border-radius: 55px;
+        padding-left: 7px;
+        margin-right: 7px;
+        margin-bottom: 47px;
+        margin-top: 9px;
+        background: #DBDBDB;
+    }
+    @media(min-width: 768px){
+        font-size: 10px;
+        line-height: 13px;
+        width: 254px;
+        height: 31px;
+        border-radius: 55px;
+        padding-left: 23px;
+        margin-right: 14px;
+        margin-left: 22px;
+        margin-bottom: 38px;
+        margin-top: 38px;
+        background: #DBDBDB;
+    }
+    @media(min-width: 1240px){
+        font-size: 16px;
+        line-height: 20px;
+        width: 476px;
+        height: 55px;
+        border-radius: 55px;
+        padding-left: 36px;
+        margin-right: 18px;
+        margin-left: 26px;
+        margin-bottom: 41px;
+        margin-top: 41px;
+    }
+}
+.filter{
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    @media(max-width: 767px){    
+        width: 21px;
+        height: 14px;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 14px;
+    }
+    @media(min-width: 768px){    
+        width: 33px;
+        height: 21px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    @media(min-width: 1240px){    
+        width: 46px;
+        height: 30px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.svg-filter{
+    @media(max-width: 767px){
+        margin: 4px;
+    }
+    @media(min-width: 768px){
+        margin: 8px;
+    }
+    @media(min-width: 1240px){
+        margin: 13px;
+    }
+}

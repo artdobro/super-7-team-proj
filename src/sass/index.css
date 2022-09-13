@@ -40,10 +40,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  padding-left: 105px;
-  padding-right: 105px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@media (min-width: 310px) {
+@media (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -53,15 +53,15 @@ body {
     width: 768px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1240px;
+    width: 1200px;
   }
 }
 
 .section {
-  padding-top: 46px;
-  padding-bottom: 46px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -96,6 +96,37 @@ body {
   height: 100%;
   opacity: 0.4;
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sign-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 46px;
+  border-radius: 20px;
+}
+@media (min-width: 480px) {
+  .sign-up {
+    width: 270px;
+    max-height: 315px;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .sign-up {
+    width: 612px;
+    height: 700px;
+  }
+}
+@media (min-width: 768px) {
+  .sign-up {
+    width: 481px;
+    height: 506px;
+  }
+}
 
 .log-in {
   position: absolute;
@@ -104,14 +135,14 @@ body {
   padding: 46px;
   border-radius: 20px;
 }
-@media (min-width: 310px) {
+@media (min-width: 480px) {
   .log-in {
     width: 270px;
     max-height: 254px;
     height: 100%;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .log-in {
     width: 612px;
     height: 571px;
@@ -132,53 +163,7 @@ body {
   height: 56px;
   border: 0;
   border-radius: 50%;
-  background-size: contain;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.sign-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 46px;
-  border-radius: 20px;
-}
-@media (min-width: 310px) {
-  .sign-up {
-    width: 270px;
-    max-height: 315px;
-    height: 100%;
-  }
-}
-@media (min-width: 1240px) {
-  .sign-up {
-    width: 612px;
-    height: 700px;
-  }
-}
-@media (min-width: 768px) {
-  .sign-up {
-    width: 481px;
-    height: 506px;
-  }
-}
-
-.modal-button {
-  position: absolute;
-  top: 424px;
-  left: 235px;
-  width: 142px;
-  height: 56px;
-  border: 0;
-  border-radius: 50%;
+  background-image: url(../images/close.svg);
   background-size: contain;
 }
 
@@ -217,7 +202,7 @@ body {
     margin-bottom: 42px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .section-screenshots {
     margin-bottom: 46px;
   }
@@ -233,6 +218,35 @@ body {
     margin-bottom: 11px;
     text-align: center;
   }
+  .p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .button {
+    height: 60px;
+    width: 214px;
+    left: 613px;
+    top: 2968px;
+    border-radius: 32px;
+    padding: 12px 46px 12px 46px;
+    background: #000000;
+    border-radius: 32px;
+  
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
 }
 @media (min-width: 768px) {
   .section-title {
@@ -245,7 +259,7 @@ body {
     text-align: center;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .section-title {
     font-size: 32px;
     line-height: 48px;
@@ -260,7 +274,7 @@ body {
     margin: -15px -9px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .screenshots-list {
     display: flex;
     flex-wrap: wrap;
@@ -284,37 +298,9 @@ body {
     margin: 15px 9px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .screenshot-item {
     width: calc((100% - 180px) / 3);
     margin: 23px 30px;
-  }
-}
-
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (min-width: 480px) {
-  .gallery-list {
-    margin: -16px;
-  }
-}
-
-.gallery-item {
-  border-radius: 16px;
-  background-color: #D9D9D9;
-}
-@media (min-width: 480px) {
-  .gallery-item {
-    width: calc((100% - 64px) / 2);
-    margin: 16px;
-    margin-top: 24px;
-  }
-}
-
-@media (min-width: 480px) {
-  .gallery-link {
-    height: 132px;
   }
 }/*# sourceMappingURL=index.css.map */

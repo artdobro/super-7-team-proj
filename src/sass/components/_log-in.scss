@@ -1,4 +1,4 @@
-// Модалка sign-up
+// Модалка log-in
 .backdrop{
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.is-hidden{
+    &.hidden{
         opacity: 0;
         pointer-events: none;
     }
@@ -18,41 +18,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.sign-up{
+}    
+.log-in{
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    background-color: #ffffff;
+    background-color: #ffffffff;
     background-image: url(../images/background-image.png);
     padding: 0px 65px 23px 65px;
     border-radius: 20px;
-    
-   transform: translate(-50%, -50%) scale(1);
-   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+    @media (min-width: $mobile){
+        min-width: 270px;
+        min-height: 254px;
+        height: 100%;
+        overflow: scroll;
+    }
 
 
-@media (min-width:$mobile) {
-    min-width: 270px;
-    min-height: 315px;
-    overflow: scroll;
-}
+    @media (min-width:$tablet){
+        min-width: 481px;
+        min-height: 409px;
+    }        
 
-@media (min-width:$tablet) {
-    min-width: 481px;
-    min-height: 506px;
-}
 
-@media (min-width:$desktop) {
-    min-width: 612px;
-    height: 700px;
-}
-
-}
+    @media (min-width: $desktop){
+        min-width: 612px;
+        height: 571px;
+    }     
+}     
 .title{
     display: inline-block;
     position: relative;
-    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -68,13 +69,15 @@
         margin-left: 66px;
         transform: translate(-50%, -50%);
     }
+
 }
 .modal-button{
-    position: relative;
-    top: 29px;
-    left: 433px;
+    position: absolute;
+    top: 38px;
+    left: 24px;
     width: 24px;
-    height: 24px;
+    height: 378px;
+    left: 442px;
 
     border: 0;
     border-radius: 50%;
@@ -88,6 +91,10 @@ label{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 13px;
+}
+.email,.password{
+    padding-top: 37px;
 }
 .fields,.field{
     display: flex;
@@ -100,18 +107,18 @@ label{
     border: 0;
     padding-left: 25px;
 }
-.sign-up-btn{
+.log-in-btn{
     color: #ffffff;
     background-color: #000000;
     border-radius: 32px;
-    width: 163px;
+    width: 142px;
     height: 56px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
     margin-top: 64px;
-}
+}  
 .field-checkbox{
     display: inline-block;
     width: 15px;
@@ -126,20 +133,4 @@ label{
 .checkbox{
     display: flex;
     margin-top: 27px;
-}
-.account{
-    display: flex;
-    margin-top: 11px;
-}
-.have-an-account,.account-log-in{
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.5;
-}
-.account-log-in{
-    color: #000000;
-    text-decoration: underline;
-    margin-left: 3px;
 }
