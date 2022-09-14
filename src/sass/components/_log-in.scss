@@ -25,6 +25,7 @@
     left: 50%;
     background-color: #ffffffff;
     background-image: url(../images/background-image.png);
+    background-size: cover;
     padding: 0px 65px 23px 65px;
     border-radius: 20px;
 
@@ -35,7 +36,6 @@
     @media (min-width: $mobile){
         min-width: 270px;
         min-height: 254px;
-        height: 100%;
         overflow: scroll;
     }
 
@@ -48,7 +48,7 @@
 
     @media (min-width: $desktop){
         min-width: 612px;
-        height: 571px;
+        height: 630px;
     }     
 }     
 .title{
@@ -73,10 +73,10 @@
 }
 .modal-button{
     position: absolute;
-    top: 38px;
+    top: 35px;
     left: 24px;
-    width: 24px;
-    height: 378px;
+    width: 142px;
+    height: 56px;
     left: 442px;
 
     border: 0;
@@ -91,10 +91,12 @@ label{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 13px;
 }
-.email,.password{
-    padding-top: 37px;
+.user-name{
+    margin-top: -18px;
+}
+.pin{
+    margin-top: 37px;
 }
 .fields,.field{
     display: flex;
@@ -106,6 +108,12 @@ label{
     border-radius: 44px;
     border: 0;
     padding-left: 25px;
+}
+.label-text{
+    margin-bottom: 13px;
+}
+.log{
+    margin-top: 13px;
 }
 .log-in-btn{
     color: #ffffff;
@@ -133,4 +141,21 @@ label{
 .checkbox{
     display: flex;
     margin-top: 27px;
+}
+.account{
+    display: flex;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+.have-an-account,.account-log-in{
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.account-log-in{
+    color: #000000;
+    text-decoration: underline;
+    margin-left: 3px;
 }
