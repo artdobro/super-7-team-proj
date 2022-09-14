@@ -2,35 +2,22 @@
 @media (min-width:$desktop) {
     width:296px;
     height: 296px;
-    margin-left: 204px;
-    margin-top: 62px;
+    margin: 0px;
 }
 @media(min-width:$tablet){
     width: 182px;
     height: 182px;
-    margin-left: 125px;
-    margin-top: 41px;
+    margin: 0px;
 }
 @media (max-width:767px) {
     width: 166px;
     height: 166px;
-    margin-top: 16px;
-    margin-left: 97px;
+    margin: 0px;
 }
 }
 .ul-about{
     text-decoration: none;
-    @media (min-width:$desktop) {
-        margin-top: 62px;
-        margin-left: 82px;
-    }
-    @media (min-width:$tablet) {
-        margin-top: 41px;
-        margin-left: 45px;
-    }
     @media (max-width:767px) {
-        margin-top: 16px;
-        margin-left: 97px;
         border-left: 1px solid #000000;
         padding-left: 7px;
     }
@@ -68,7 +55,7 @@
         margin-top: 3px;
     }
 }
-.section-about{
+.about{
     @media (min-width:$desktop) {
         display: flex;
     }
