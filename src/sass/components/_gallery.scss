@@ -16,38 +16,59 @@
     
 }
 
-.gallery-item {
-    
+.gallery-item {    
     border-radius: 16px;
-
     background-color: #D9D9D9;
     width: calc((100% - 8 * 23px) / 4);
-    margin: 23px;
-    padding: 32px 30px;
     position:relative;
     overflow: hidden;
 
     @media (max-width: 767px) {
         width: calc((100% - 4 * 16px) / 2);
         margin: 16px;
-        padding: 11px 14px;
     }
 
     @media (min-width: $tablet) {
         width: calc((100% - 6 * 18px) / 3);
         margin: 18px;
-        padding: 21px 25px;
     }
 
     @media (min-width: $desktop) {
         width: calc((100% - 8 * 23px) / 4);
         margin: 23px;
-        padding: 32px 30px;
+    }
+}
+.gallery-link{
+    display: inline-block;
+
+    @media (max-width: 767px) {
+        padding: 11px 14px;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 21px 25px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 31px;
     }
 }
 
 .card-img{
-    margin-bottom: 24px;
+    @media (max-width: 767px) {
+        max-width: 79px;
+        margin-bottom: 11px;
+    }
+
+    @media (min-width: $tablet) {
+        width: 134px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 172px;
+        margin-bottom: 21px;
+    }
 }
 
 .card-name{
