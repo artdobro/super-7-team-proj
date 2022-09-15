@@ -1,18 +1,18 @@
 .main-icon{
-@media (min-width:$desktop) {
-    width:296px;
-    height: 296px;
-    margin-right: 84px;
+@media (max-width:767px) {
+    width: 166px;
+    height: 166px;
+
 }
 @media(min-width:$tablet){
     width: 182px;
     height: 182px;
     margin-right: 45px;
 }
-@media (max-width:767px) {
-    width: 166px;
-    height: 166px;
-
+@media (min-width:$desktop) {
+    width:296px;
+    height: 296px;
+    margin-right: 84px;
 }
 }
 .ul-about{
@@ -30,31 +30,32 @@
     color: black;        
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
-    @media (min-width:$desktop) {
-        font-size: 26px;
-        line-height: 35px;
-     }
-    @media (min-width:$tablet) {
-        font-size: 20px;
-        line-height: 30px;
-     }
+    font-weight: 400;    
     @media (max-width:767px) {
         font-size: 12px;
         line-height: 18px;
      }
+     @media (min-width:$tablet) {
+        font-size: 20px;
+        line-height: 30px;
+     }
+     @media (min-width:$desktop) {
+        font-size: 26px;
+        line-height: 35px;
+     }
 
 }
-.li-about:not(:first-child){
-    @media (min-width:$desktop) {
-       margin-top: 14px; 
+.li-about:not(:first-child){    
+    @media (max-width:767px) {
+        margin-top: 3px;
     }
     @media (min-width:$tablet) {
         margin-top: 10px;
     }
-    @media (max-width:767px) {
-        margin-top: 3px;
+    @media (min-width:$desktop) {
+       margin-top: 14px; 
     }
+    
 }
 .about{
     @media (min-width:$desktop) {
