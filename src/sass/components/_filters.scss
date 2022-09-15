@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(max-width: 767px){
+        flex-direction: column-reverse;
+    }
 }
 .search-container{
     display: flex;
@@ -14,15 +17,14 @@
     justify-content: center;
 }
 .button{
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     @media(max-width: 767px){ 
         width: 17px;
         height: 17px;
         border-radius: 50%;
         background-color: #000000;
-        margin-top: 9px;
-        margin-bottom: 47px;
     }
     @media(min-width: 768px){
         width: 31px;
@@ -48,9 +50,6 @@
         height: 17px;
         border-radius: 55px;
         padding-left: 7px;
-        margin-right: 7px;
-        margin-bottom: 47px;
-        margin-top: 9px;
         background: #DBDBDB;
     }
     @media(min-width: 768px){
@@ -155,10 +154,6 @@
             width: 20px;
             height: 20px;
             fill: #ffffff; 
-            padding-right: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
         }
     @media(min-width: 1240px){
             width: 37px;
