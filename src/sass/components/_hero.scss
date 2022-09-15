@@ -27,6 +27,21 @@
     font-size: 40px;
     line-height: 60px;
     color: #FFFFFF;
+    @media (max-width: 767px) {
+        width: 112px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    @media (min-width: $tablet) {
+        width: 267px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    @media (min-width: $tablet) {
+        width: 445px;
+        font-size: 40px;
+        line-height: 60px;
+    }
 }
 .hero-h1 .hero-span{
     font-weight: 400;  

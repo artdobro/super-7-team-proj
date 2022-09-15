@@ -1,5 +1,5 @@
 .main-icon{
-    @media (max-width:767px) {
+@media (max-width:767px) {
     width: 166px;
     height: 166px;
 }
@@ -34,10 +34,11 @@
         font-size: 12px;
         line-height: 18px;
      }
-    @media (min-width:$tablet) {
+     @media (min-width:$tablet) {
         font-size: 20px;
         line-height: 30px;
      }
+
     @media (min-width:$desktop) {
         font-size: 26px;
         line-height: 35px;
@@ -46,13 +47,16 @@
 .li-about:not(:first-child){    
     @media (max-width:767px) {
         margin-top: 3px;
-    }    
+
+    }
+
     @media (min-width:$tablet) {
         margin-top: 10px;
     }
     @media (min-width:$desktop) {
        margin-top: 14px; 
     }
+    
 }
 .about{    
     @media (min-width:$tablet) {
