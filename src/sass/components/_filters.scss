@@ -14,8 +14,9 @@
     justify-content: center;
 }
 .button{
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     @media(max-width: 767px){ 
         width: 17px;
         height: 17px;
@@ -155,10 +156,6 @@
             width: 20px;
             height: 20px;
             fill: #ffffff; 
-            padding-right: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
         }
     @media(min-width: 1240px){
             width: 37px;
